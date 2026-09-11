@@ -234,7 +234,7 @@ HTML_PAGE = """<!DOCTYPE html>
     function setSuccess() {
       submitBtn.classList.add('is-success');
       btnContent.innerHTML = `${CHECK_ICON}<span class="btn-text">Sent</span>`;
-      setStatus('Your question is on its way. Thank you!', 'success');
+      setStatus('Your question is on its way and I will answer in a note . Thank you!', 'success');
     }
     function setError(message) {
       submitBtn.disabled = false;

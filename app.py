@@ -190,7 +190,7 @@ HTML_PAGE = """<!DOCTYPE html>
         <path d="M6 13L24 27L42 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
       </svg>
       <h1 class="panel__title">Ask me anything</h1>
-      <p class="panel__subtitle">Questions land straight in my inbox — no names required.</p>
+      <p class="panel__subtitle">Questions land straight in my inbox — I will answer in a note </p>
       <form id="ama-form" novalidate>
         <div class="field">
           <label for="name">Name <span class="field__hint">optional</span></label>
@@ -234,7 +234,7 @@ HTML_PAGE = """<!DOCTYPE html>
     function setSuccess() {
       submitBtn.classList.add('is-success');
       btnContent.innerHTML = `${CHECK_ICON}<span class="btn-text">Sent</span>`;
-      setStatus('Your question is on its way and I will answer in a note . Thank you!', 'success');
+      setStatus('Your question is on its way . Thank you!', 'success');
     }
     function setError(message) {
       submitBtn.disabled = false;
